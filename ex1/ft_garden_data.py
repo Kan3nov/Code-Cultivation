@@ -1,12 +1,15 @@
-class Plant :
-    def __init__(self : Plant, name : str, height : int, age : int) -> None :
+class Plant:
+    def __init__(self, name: str, height: int, age: int) -> None:
         self.name = name
         self.height = height
         self.age = age
-    def show(self) -> None:
-        print(f"Name : {self.name}, Height : {self.height}cm, Age : {self.age} days")
 
-if (__name__ == "__main__") :
+    def show(self) -> None:
+        print(f"Name : {self.name}, Height : {self.height}cm," +
+              f"Age : {self.age} days")
+
+
+if (__name__ == "__main__"):
     print("=== Garden Plant Registry ===")
     rose = Plant("Rose", 25, 30)
     sunflower = Plant("Sunflower", 80, 45)
