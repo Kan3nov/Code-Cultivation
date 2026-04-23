@@ -1,6 +1,7 @@
 class Plant:
     def __init__(
-            self, name: str, height: float, age: int, growth_factor: int = 1
+            self, name: str, height: float, age: int,
+            growth_factor: float = 1.0
             ) -> None:
         if (name == ""):
             print("Error, no empty strings are permitted")
@@ -19,10 +20,10 @@ class Plant:
     def get_age(self) -> int:
         return self._age
 
-    def get_height(self) -> int:
+    def get_height(self) -> float:
         return self._height
 
-    def get_name(self) -> int:
+    def get_name(self) -> str:
         return self._name
 
     def set_age(self, age: int) -> None:

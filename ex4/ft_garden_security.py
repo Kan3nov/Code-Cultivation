@@ -21,10 +21,10 @@ class Plant:
     def get_age(self) -> int:
         return self._age
 
-    def get_height(self) -> int:
+    def get_height(self) -> float:
         return self._height
 
-    def get_name(self) -> int:
+    def get_name(self) -> str:
         return self._name
 
     def set_age(self, age: int) -> None:
@@ -56,8 +56,8 @@ class Plant:
         self.grow()
 
     def grow(self) -> None:
-        self.height += self.growth_factor
-        self.height = round(self.height, 1)
+        self._height += self.growth_factor
+        self._height = round(self._height, 1)
 
 
 if (__name__ == "__main__"):
